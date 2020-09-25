@@ -4,13 +4,13 @@ class Ball {
         isStatic:false,
         restitution:0.3,
         friction:0.5,
-        density:1.2
+        density:0.4
         
    
       }
-      this.body = Bodies.circle(x, y, 30, options);
-      this.width = 30;
-      this.height = 30;
+      this.body = Bodies.circle(x, y, 15, options);
+      this.width = 15;
+      this.height = 15;
       
       World.add(world, this.body);
     }
