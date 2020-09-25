@@ -8,7 +8,7 @@ class Ball {
         
    
       }
-      this.body = Bodies.rectangle(x, y, 30, 30, options);
+      this.body = Bodies.circle(x, y, 30, options);
       this.width = 30;
       this.height = 30;
       
@@ -20,9 +20,9 @@ class Ball {
       push();
       translate(pos.x, pos.y);
       rotate(angle);
-      rectMode(CENTER);
+      ellipseMode(RADIUS);
       fill(255);
-      rect(0, 0, this.width, this.height);
+      ellipse(0, 0, this.width, this.height);
       pop();
     }
   };
